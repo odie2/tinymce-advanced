@@ -237,7 +237,7 @@ $all_buttons = $this->get_all_buttons();
 $this->warn_if_unsupported();
 
 if ( isset( $_POST['tadv-save'] ) && empty( $message ) ) {
-	?><div class="updated"><p><?php _e( 'Settings saved.', 'tinymce-advanced' ); ?></p></div><?php
+	?><div class="updated"><p><?php _e( 'Settings saved.' ); ?></p></div><?php
 } else {
 	echo $message;
 }
@@ -246,7 +246,7 @@ if ( isset( $_POST['tadv-save'] ) && empty( $message ) ) {
 <form id="tadvadmin" method="post" action="">
 
 <p class="tadv-submit">
-	<input class="button-primary button-large" type="submit" name="tadv-save" value="<?php _e( 'Save Changes', 'tinymce-advanced' ); ?>" />
+	<input class="button-primary button-large" type="submit" name="tadv-save" value="<?php _e( 'Save Changes' ); ?>" />
 </p>
 
 <div id="tadvzones">
@@ -510,7 +510,7 @@ if ( ! is_multisite() || current_user_can( 'manage_sites' ) ) {
 <p class="tadv-submit">
 	<?php wp_nonce_field( 'tadv-save-buttons-order' ); ?>
 	<input class="button" type="submit" name="tadv-restore-defaults" value="<?php _e( 'Restore Default Settings', 'tinymce-advanced' ); ?>" />
-	<input class="button-primary button-large" type="submit" name="tadv-save" value="<?php _e( 'Save Changes', 'tinymce-advanced' ); ?>" />
+	<input class="button-primary button-large" type="submit" name="tadv-save" value="<?php _e( 'Save Changes' ); ?>" />
 </p>
 </form>
 
