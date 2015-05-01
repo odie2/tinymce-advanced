@@ -574,3 +574,13 @@ class Tinymce_Advanced {
 
 new Tinymce_Advanced;
 endif;
+
+// Add settings link on plugin page
+function mce_settings_link($links) { 
+  $settings_link = '<a href="options-general.php?page=tinymce-advanced">' . __('Settings') . '</a>'; 
+  array_unshift($links, $settings_link); 
+  return $links; 
+}
+ 
+$plugin = plugin_basename(__FILE__); 
+add_filter("plugin_action_links_$plugin", 'mce_settings_link' );
