@@ -6,6 +6,8 @@ Description: Enables advanced features and plugins in TinyMCE, the visual editor
 Version: 4.1.9
 Author: Andrew Ozz
 Author URI: http://www.laptoptips.ca/
+Text Domain: tinymce-advanced
+Domain Path: /langs/
 
 Released under the GPL version 2.0, http://www.gnu.org/licenses/gpl-2.0.html
 
